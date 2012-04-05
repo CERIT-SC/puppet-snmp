@@ -18,7 +18,7 @@ Quick utils setup
 
 and agent setup
 
-     include snmp::server
+    include snmp::server
 
 Full configuration options:
 
