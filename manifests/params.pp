@@ -26,11 +26,13 @@ class snmp::params {
 	}
 
 	if $snmpd_opts == ''		{ $snmpd_opts		= '' }
+	if $snmpd_run_aug == ''		{ $snmpd_run_aug	= '' }
 	if $snmpd_enabled == ''		{ $snmpd_enabled	= true }
 	if $snmpd_conf_name == ''	{ $snmpd_conf_name	= '/etc/snmp/snmpd.conf' }
 	if $snmpd_config == ''		{ $snmpd_config		= '' }
 
 	if $trapd_opts == ''		{ $trapd_opts		= '' }
+	if $trapd_run_aug == ''		{ $trapd_run_aug	= '' }
 	if $trapd_enabled == ''		{ $trapd_enabled	= false }
 	if $trapd_conf_name == ''	{ $trapd_conf_name	= '/etc/snmp/snmptrapd.conf' }
 	if $trapd_config == ''		{ $trapd_config		= '' }
